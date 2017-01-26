@@ -14,7 +14,7 @@ class ListConcatenate{
 
           if(!l2.isEmpty)
           concateList(l1 :+ l2.head , l2.tail)      //recursive call with fetching heading everytime
-
+          else l1  
 	} 
 
 }
@@ -24,5 +24,4 @@ object Q3 extends App{
 	val list2 = List(4,5,6)
 	val listobj = new ListConcatenate
 	println(listobj.concateList(list1, list2))	//invocation
-
 }
